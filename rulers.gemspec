@@ -21,6 +21,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency "rack", "~>2.2"
-  # Recent Ruby removes Webrick, so add it back
+  spec.add_runtime_dependency "erubis" 
   spec.add_runtime_dependency "webrick"
 end
