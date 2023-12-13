@@ -1,6 +1,8 @@
 # rulers/lib/rulers.rb
 require "rulers/version"
 require "rulers/routing"
+require "rulers/util"
+require "rulers/dependencies"
 
 module Rulers
   class Application
@@ -14,8 +16,7 @@ module Rulers
       klass, act = get_controller_and_action(env)
       controller = klass.new(env)
       text = controller.send(act)
-      [200, {'Content-Type' => 'text/html'},
-        [text]]
+      [200, {'Content-Type' => 'text/html'}, [text]]
     end
   end
 
