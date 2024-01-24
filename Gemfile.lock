@@ -1,0 +1,27 @@
+PATH
+  remote: .
+  specs:
+    rulers (0.0.5)
+      erubis
+      multi_json
+      rack (~> 2.2)
+      webrick
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    erubis (2.7.0)
+    multi_json (1.15.0)
+    rack (2.2.8)
+    rake (12.3.3)
+    webrick (1.8.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rake (~> 12.0)
+  rulers!
+
+BUNDLED WITH
+   2.1.4
